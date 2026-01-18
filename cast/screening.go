@@ -13,13 +13,13 @@ type Screening struct {
 	Price int       `json:"Price"`
 }
 
-func NewScreening(film Film, kino string, date time.Time, timeStr string, cost int) Screening {
+func NewScreening(film Film, kino string, date time.Time, time string, price int) Screening {
 	return Screening{
 		Film:  film,
 		Kino:  kino,
 		Date:  date,
-		Time:  timeStr,
-		Price: cost,
+		Time:  time,
+		Price: price,
 	}
 }
 
