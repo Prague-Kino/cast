@@ -1,4 +1,4 @@
-package cast
+package main
 
 const aerokinaProgramURL = "https://www.kinoaero.cz/en?cinema=1%2C2%2C9%2C7%2C3&sort=sort-by-data&hall=34%2C35%2C1%2C2%2C3%2C24&english-friendly=1"
 
