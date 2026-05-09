@@ -1,9 +1,11 @@
 package cast
 
 type Kino struct {
-	Name       string `json:"Name"`
-	BaseDomain string `json:"BaseDomain"`
-	ProgramURL string `json:"ProgramURL"`
+	Name        string `json:"name"`
+	BaseDomain  string `json:"website"`
+	ProgramURL  string `json:"ProgramURL"`
+	Address     string `json:"address"`
+	Description string `json:"description"`
 }
 
 func NewKino(name, baseDomain, programURL string) *Kino {
