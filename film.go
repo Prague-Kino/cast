@@ -1,4 +1,4 @@
-package main
+package cast
 
 type Film struct {
 	Title    string `json:"Title"`

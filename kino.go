@@ -1,4 +1,4 @@
-package main
+package cast
 
 type Kino struct {
 	Name        string `json:"name"`
