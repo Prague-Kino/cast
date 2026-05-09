@@ -1,11 +1,9 @@
 package cast
 
-import "github.com/Prague-Kino/cast"
-
 const aerokinaProgramURL = "https://www.kinoaero.cz/en?cinema=1%2C2%2C9%2C7%2C3&sort=sort-by-data&hall=34%2C35%2C1%2C2%2C3%2C24&english-friendly=1"
 
 var (
-	KinoAero = cast.Kino{
+	KinoAero = Kino{
 		Name:        "Kino Aero",
 		Address:     "Biskupcova 31, Praha 3",
 		Description: "The cult repertory cinema with a single screen but a lot going on it.",
@@ -13,7 +11,7 @@ var (
 		ProgramURL:  aerokinaProgramURL,
 	}
 
-	KinoSvetozor = cast.Kino{
+	KinoSvetozor = Kino{
 		Name:        "Kino Světozor",
 		Address:     "Vodičkova 41, Praha 1",
 		Description: "A three screen arthouse cinema in the very heart of Prague.",
@@ -21,7 +19,7 @@ var (
 		ProgramURL:  aerokinaProgramURL,
 	}
 
-	KinoLucerna = cast.Kino{
+	KinoLucerna = Kino{
 		Name:        "Kino Lucerna",
 		Address:     "Vodičkova 36, Prague 1",
 		Description: "A legendary cinema in Prague with a grand and festive interior.",
@@ -29,7 +27,7 @@ var (
 		ProgramURL:  aerokinaProgramURL,
 	}
 
-	KinoPritomnost = cast.Kino{
+	KinoPritomnost = Kino{
 		Name:        "Kino Přítomnost",
 		Address:     "Cinema Siwiecova 1, Praha 3",
 		Description: "Prague's first boutique cinema. Where the film experience meets the bar experience.",
@@ -37,7 +35,7 @@ var (
 		ProgramURL:  aerokinaProgramURL,
 	}
 
-	EdisonFilmhub = cast.Kino{
+	EdisonFilmhub = Kino{
 		Name:        "Edison Filmhub",
 		BaseDomain:  "https://edisonfilmhub.cz/en/",
 		ProgramURL:  "https://edisonfilmhub.cz/en/programme",
@@ -45,7 +43,7 @@ var (
 		Description: "You can find us in the Edison Transformation station, one of Prague's most significant functionalist buildings. The building is part of Prague's heritage reservation and is protected by UNESCO.",
 	}
 
-	KinoPonrepo = cast.Kino{
+	KinoPonrepo = Kino{
 		Name:        "Ponrepo",
 		BaseDomain:  "nfa.cz",
 		ProgramURL:  "https://nfa.cz/en/ponrepo-cinema/program/program",
@@ -54,6 +52,6 @@ var (
 	}
 )
 
-var AllKinos = []cast.Kino{
+var AllKinos = []Kino{
 	KinoAero, KinoSvetozor, KinoLucerna, KinoPritomnost, EdisonFilmhub, KinoPonrepo,
 }
