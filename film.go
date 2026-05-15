@@ -1,26 +1,24 @@
 package cast
 
 type Film struct {
-	Title    string `json:"Title"`
-	Year     string `json:"Year"`
-	Rated    string `json:"Rated"`
-	Released string `json:"Released"`
-	Runtime  string `json:"Runtime"`
-	Genre    string `json:"Genre"`
-	Director string `json:"Director"`
-	Plot     string `json:"Plot"`
-	Poster   string `json:"Poster"`
+	Title    string `json:"title"`
+	Year     string `json:"year"`
+	Runtime  string `json:"runtime"`
+	Director string `json:"director"`
+	Country  string `json:"country"`
+	Genre    string `json:"genre"`
+	Plot     string `json:"plot"`
+	Poster   string `json:"poster"`
 }
 
-func NewFilm(title, year, rated, released, runtime, genre, director, plot, poster string) *Film {
+func NewFilm(title, year, runtime, director, country, genre, plot, poster string) *Film {
 	return &Film{
 		Title:    title,
 		Year:     year,
-		Rated:    rated,
-		Released: released,
 		Runtime:  runtime,
-		Genre:    genre,
 		Director: director,
+		Country:  country,
+		Genre:    genre,
 		Plot:     plot,
 		Poster:   poster,
 	}
